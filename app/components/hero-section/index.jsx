@@ -33,31 +33,37 @@ function HeroSection({ profile }) {
           </div>
         </div>
 
+        {/* Expertise section with responsive fixes */}
         <div className="bg-primary-bg rounded-xl p-6 mb-8 border border-[#1b2c68a0]">
           <h2 className="text-xl font-semibold text-primary-title mb-4 text-center">EXPERTISE</h2>
-          <div className="flex flex-row justify-around items-center gap-6">
-            <div className="flex flex-1 items-center gap-3 text-primary-text justify-center">
-              <div className="flex gap-2">
+          
+          {/* Changed from flex-row to grid for better mobile responsiveness */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* First expertise item */}
+            <div className="flex flex-col items-center text-center gap-3 text-primary-text">
+              <div className="flex gap-2 flex-wrap justify-center">
                 <SiDjango className="text-2xl" /> 
                 <SiFastapi className="text-2xl" />
                 <SiFlask className="text-2xl" />
                 <SiMysql className="text-2xl" />
                 <SiPostgresql className="text-2xl" />
               </div>
-              <span>Django, FastAPI, Flask, MySQL, PostgreSQL</span>
+              <span className="text-sm">Django, FastAPI, Flask, MySQL, PostgreSQL</span>
             </div>
 
-            <div className="flex flex-1 items-center gap-3 text-primary-text justify-center">
+            {/* Second expertise item */}
+            <div className="flex flex-col items-center text-center gap-3 text-primary-text">
               <FaPython className="text-2xl" /> 
-              <span>Web Apps & APIs</span>
+              <span className="text-sm">Web Apps & APIs</span>
             </div>
 
-            <div className="flex flex-1 items-center gap-3 text-primary-text justify-center">
+            {/* Third expertise item */}
+            <div className="flex flex-col items-center text-center gap-3 text-primary-text">
               <div className="flex gap-2">
                 <FaAws className="text-2xl" />
                 <FaDocker className="text-2xl" />
               </div>
-              <span>AWS, Docker, CI/CD</span>
+              <span className="text-sm">AWS, Docker, CI/CD</span>
             </div>
           </div>
         </div>
@@ -74,7 +80,7 @@ function HeroSection({ profile }) {
 
           <div className="md:w-1/2 bg-primary-bg rounded-xl p-6 border border-[#1b2c68a0]">
             <h2 className="text-xl font-semibold text-primary-title mb-4">Connect</h2>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 flex-wrap justify-center md:justify-start">
               <Link
                 href={userData.github} 
                 target='_blank' 
@@ -112,13 +118,13 @@ function HeroSection({ profile }) {
 
         <div className="flex justify-center">
           <Link 
-            href={userData.resume} // Resume URL
-            target="_blank" // Open resume in a new tab
+            href={userData.resume}
+            target="_blank"
             className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600"
           >
             <button className="px-6 py-3 bg-primary-bg rounded-full text-white font-medium flex items-center gap-2 hover:gap-3 transition-all duration-300">
-              <span>GET RESUME</span> {/* Button text */}
-              <MdDownload size={20} /> {/* Download icon */}
+              <span>GET RESUME</span>
+              <MdDownload size={20} />
             </button>
           </Link>
         </div>
