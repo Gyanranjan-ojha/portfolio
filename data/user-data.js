@@ -1,4 +1,7 @@
 export const userData = {
+  email: 'gyanranjanojha010@gmail.com',
+  instagram: 'https://www.instagram.com/ranjan_gnani/',
+  experience: '2.6+ Years Professional',
   githubUser: 'Gyanranjan-ojha',
   devUsername: "Gyanranjan-ojha",
   github: 'https://github.com/Gyanranjan-ojha',

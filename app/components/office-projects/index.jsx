@@ -1,5 +1,5 @@
 import { FaPython, FaDocker, FaHtml5, FaCss3Alt, FaBitbucket, FaGithub, FaSteam } from 'react-icons/fa';
-import { SiDjango, SiMysql, SiRedis, SiFastapi, SiJavascript, SiNewrelic, SiAmazonec2, SiAwsfargate, SiJfrogpipelines, SiAwslambda, SiAmazons3, SiPostgresql, SiGraphql, SiNginx, SiNextdotjs, SiDiscord, SiHubspot } from 'react-icons/si';
+import { SiDjango, SiMysql, SiRedis, SiFastapi, SiJavascript, SiNewrelic, SiAmazonec2, SiAwsfargate, SiAwslambda, SiAmazons3, SiPostgresql, SiGraphql, SiNginx, SiNextdotjs, SiDiscord, SiHubspot } from 'react-icons/si';
 import GlowCard from '../helper/glow-card';
 import SectionTitle from '../helper/section-title';
 import OfficeProjectCard from './office-project-card';
@@ -18,7 +18,6 @@ const officeProjects = [
       { name: "AWS Fargate", icon: SiAwsfargate },
       { name: "Docker", icon: FaDocker },
       { name: "GraphQL", icon: SiGraphql },
-      { name: "PostgreSQL", icon: SiPostgresql },
       { name: "Github", icon: FaGithub },
       { name: "Newrelic", icon: SiNewrelic },
     ],
