@@ -91,8 +91,9 @@ const officeProjects = [
       { name: "MySQL", icon: SiMysql },
       { name: "GraphQL", icon: SiGraphql },
       { name: "Discord API", icon: SiDiscord },
-      { name: "AWS EC2", icon: SiAmazonec2 },
       { name: "AWS S3", icon: SiAmazons3 },
+      { name: "AWS EC2", icon: SiAmazonec2 },
+      { name: "Nginx", icon: SiNginx },
       { name: "Bitbucket", icon: FaBitbucket },
     ],
     contributions: [
@@ -133,6 +134,7 @@ const officeProjects = [
     duration: "2024 Q4",
     techStack: [
       { name: "Python", icon: FaPython },
+      { name: "FastAPI", icon: SiFastapi },
       { name: "Nginx", icon: SiNginx },
       { name: "Redis", icon: SiRedis },
     ],
