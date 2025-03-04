@@ -9,21 +9,21 @@ function ProjectCard({ project }) {
 
   return (
     <Link href={project.html_url} target="_blank">
-      <div className="p-8 h-48 flex flex-col justify-between bg-primary-bg">
+      <div className="p-4 md:p-6 lg:p-8 h-auto min-h-[12rem] flex flex-col justify-between bg-primary-bg">
         <div className="">
           <div className="flex justify-between items-center">
-            <p className="text-xl font-semibold capitalize text-primary-title">
+            <p className="text-xl font-semibold capitalize text-primary-title truncate max-w-[80%]">
               {project.name}
             </p>
-            <IoLinkSharp className="text-primary-icon text-xl" />
+            <IoLinkSharp className="text-primary-icon text-xl flex-shrink-0" />
           </div>
-          <p className="line-clamp-2 text-primary-text my-5 text-sm">
+          <p className="line-clamp-2 text-primary-text my-3 md:my-5 text-sm">
             {project.description}
           </p>
         </div>
 
-        <div className="flex justify-between items-center">
-          <div className="flex items-center gap-6">
+        <div className="flex justify-between items-center flex-wrap gap-2">
+          <div className="flex items-center gap-4 md:gap-6">
             <p className="flex items-center gap-2">
               <FaRegStar className="text-primary-icon" />
               <span>{project.stargazers_count}</span>

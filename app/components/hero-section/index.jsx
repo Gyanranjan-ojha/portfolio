@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdDownload } from "react-icons/md";
-import { FaPython, FaAws, FaDocker, FaInstagramSquare } from 'react-icons/fa';
+import { FaPython, FaAws, FaDocker, FaInstagramSquare,  FaSteam } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md'; 
-import { SiDjango, SiFastapi, SiFlask, SiMysql, SiPostgresql } from 'react-icons/si';
+import { SiDjango, SiFastapi, SiFlask, SiMysql, SiPostgresql, SiGithubactions, SiJfrogpipelines, SiDocker, SiHubspot, SiDiscord } from 'react-icons/si';
 
 function HeroSection({ profile }) {
   const professionalSummary = `Passionate Python Developer with ${userData.experience} in building scalable web applications and RESTful APIs. Specialized in Django, FastAPI, and AWS cloud services with a strong focus on code quality and performance optimization.`;
@@ -53,17 +53,24 @@ function HeroSection({ profile }) {
 
             {/* Second expertise item */}
             <div className="flex flex-col items-center text-center gap-3 text-primary-text">
-              <FaPython className="text-2xl" /> 
+              <div className="flex gap-2 flex-wrap justify-center">
+                <FaPython className="text-2xl" /> 
+                <FaSteam className="text-2xl" />
+                <SiDiscord className="text-2xl" />
+                <SiHubspot className="text-2xl" />
+              </div>
               <span className="text-sm">Web Apps & APIs</span>
             </div>
 
             {/* Third expertise item */}
             <div className="flex flex-col items-center text-center gap-3 text-primary-text">
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap justify-center">
                 <FaAws className="text-2xl" />
                 <FaDocker className="text-2xl" />
+                <SiJfrogpipelines className="text-2xl" />
+                <SiGithubactions className="text-2xl" />
               </div>
-              <span className="text-sm">AWS, Docker, CI/CD</span>
+              <span className="text-sm">AWS, Docker, CI/CD, Github Actions</span>
             </div>
           </div>
         </div>

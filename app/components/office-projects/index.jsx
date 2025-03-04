@@ -1,5 +1,5 @@
 import { FaPython, FaDocker, FaHtml5, FaCss3Alt, FaBitbucket, FaGithub, FaSteam } from 'react-icons/fa';
-import { SiDjango, SiMysql, SiRedis, SiFastapi, SiJavascript, SiNewrelic, SiAmazonec2, SiAwsfargate, SiAwslambda, SiAmazons3, SiPostgresql, SiGraphql, SiNginx, SiNextdotjs, SiDiscord, SiHubspot } from 'react-icons/si';
+import { SiDjango, SiMysql, SiRedis, SiFastapi, SiJavascript, SiNewrelic, SiAmazonec2, SiAwsfargate, SiAwslambda, SiAmazons3, SiPostgresql, SiGraphql, SiNginx, SiNextdotjs, SiDiscord, SiHubspot, SiJfrogpipelines, SiGithubactions } from 'react-icons/si';
 import GlowCard from '../helper/glow-card';
 import SectionTitle from '../helper/section-title';
 import OfficeProjectCard from './office-project-card';
@@ -19,6 +19,7 @@ const officeProjects = [
       { name: "Docker", icon: FaDocker },
       { name: "GraphQL", icon: SiGraphql },
       { name: "Github", icon: FaGithub },
+      { name: "Github Actions", icon: SiGithubactions },
       { name: "Newrelic", icon: SiNewrelic },
     ],
     contributions: [
@@ -44,6 +45,7 @@ const officeProjects = [
       { name: "GraphQL", icon: SiGraphql },
       { name: "Steam API", icon: FaSteam },
       { name: "Github", icon: FaGithub },
+      { name: "Github Actions", icon: SiGithubactions },
     ],
     contributions: [
       "Designed and implemented ORM-based database interactions using SQLAlchemy",
@@ -70,6 +72,7 @@ const officeProjects = [
       { name: "AWS S3", icon: SiAmazons3 },
       { name: "AWS Fargate", icon: SiAwsfargate },
       { name: "Bitbucket", icon: FaBitbucket },
+      { name: "CI/CD", icon: SiJfrogpipelines },
     ],
     contributions: [
       "Designed secure Restful APIs to integrate backend functionalities with the frontend",
@@ -95,6 +98,7 @@ const officeProjects = [
       { name: "AWS EC2", icon: SiAmazonec2 },
       { name: "Nginx", icon: SiNginx },
       { name: "Bitbucket", icon: FaBitbucket },
+      { name: "CI/CD", icon: SiJfrogpipelines },
     ],
     contributions: [
       "Designed and implemented backend APIs using Django REST Framework",
