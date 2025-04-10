@@ -1,12 +1,12 @@
 export const userData = {
   email: 'gyanranjanojha010@gmail.com',
   instagram: 'https://www.instagram.com/ranjan_gnani/',
-  experience: '2.6+ Years Professional',
+  experience: '3+ Years Professional',
   githubUser: 'Gyanranjan-ojha',
   devUsername: "Gyanranjan-ojha",
   github: 'https://github.com/Gyanranjan-ojha',
   linkedIn: 'http://www.linkedin.com/in/gyanranjanojha-34330a216',
-  resume: "https://drive.google.com/file/d/1s4LZXz3koxXSSEEvh_SeXsEDibMsNj4j/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1m2LgVLr8i72Oiz3_fHjsmPU3rESklkGM/view?usp=sharing",
   skills: ["Python", "Django", "Django REST Framework", "FastAPI", "MySQL", 'MongoDB', 'Postgres', 'Docker', 'AWS'],
   technical_skills : [
     "Python", "Django", "Django REST Framework", "FastAPI", "MySQL", "MongoDB", "Redis", "Docker", "Git", "HTML", "CSS", "JavaScript", "React.js", "AWS", "Linux", "Swagger",
