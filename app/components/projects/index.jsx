@@ -8,7 +8,7 @@ const Projects = ({ projects, profile }) => {
 
   return (
     <div id="projects" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
-      <SectionTitle title="Git Projects" />
+      <SectionTitle title="Personal Projects" />
 
       <div className="grid py-8 md:py-12 grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8 px-2 sm:px-0">
         {

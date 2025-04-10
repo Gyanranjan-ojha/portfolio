@@ -1,5 +1,5 @@
-import { FaPython, FaDocker, FaHtml5, FaCss3Alt, FaBitbucket, FaGithub, FaSteam } from 'react-icons/fa';
-import { SiDjango, SiMysql, SiRedis, SiFastapi, SiJavascript, SiNewrelic, SiAmazonec2, SiAwsfargate, SiAwslambda, SiAmazons3, SiPostgresql, SiGraphql, SiNginx, SiNextdotjs, SiDiscord, SiHubspot, SiJfrogpipelines, SiGithubactions, SiMixpanel } from 'react-icons/si';
+import { FaPython, FaDocker, FaHtml5, FaCss3Alt, FaBitbucket, FaGithub, FaSteam, FaNodeJs, FaReact } from 'react-icons/fa';
+import { SiDjango, SiMysql, SiRedis, SiFastapi, SiJavascript, SiNewrelic, SiAmazonec2, SiAwsfargate, SiAwslambda, SiAmazons3, SiPostgresql, SiGraphql, SiNginx, SiNextdotjs, SiDiscord, SiHubspot, SiJfrogpipelines, SiGithubactions, SiMixpanel, SiSwagger } from 'react-icons/si';
 import GlowCard from '../helper/glow-card';
 import SectionTitle from '../helper/section-title';
 import OfficeProjectCard from './office-project-card';
@@ -57,6 +57,35 @@ const officeProjects = [
   },
   {
     id: 3,
+    name: "Game Ratings Service (Internal Tool) (Full Stack Role)",
+    description: "Designed and developed a centralized system for managing user and critic ratings for games across different platforms, replacing previous Google Sheets-based system.",
+    duration: "2023 Q2 - 2023 Q4",
+    techStack: [
+      { name: "Python", icon: FaPython },
+      { name: "FastAPI", icon: SiFastapi },
+      { name: "MySQL", icon: SiMysql },
+      { name: "Swagger", icon: SiSwagger },
+      { name: "React", icon: FaReact },
+      { name: "Node.js", icon: FaNodeJs },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "HTML", icon: FaHtml5 },
+      { name: "CSS", icon: FaCss3Alt },
+      { name: "Docker", icon: FaDocker },
+      { name: "Github", icon: FaGithub },
+      { name: "Github Actions", icon: SiGithubactions },
+      { name: "Mixpanel", icon: SiMixpanel },
+      { name: "Newrelic", icon: SiNewrelic },
+    ],
+    contributions: [
+      "Led full stack development from architecture to deployment implementing both backend and frontend components",
+      "Developed RESTful API endpoints with FastAPI and integrated OpenCritic ratings with automated scraping",
+      "Built ORM-based database interactions using SQLAlchemy, Alembic for migrations and implemented data validation with Pydantic",
+      "Created interactive frontend with React components for game rating management and visualization",
+      "Implemented comprehensive logging system and performance monitoring with NewRelic and Mixpanel"
+    ]
+  },
+  {
+    id: 4,
     name: "DQH Admin Tool (Internal Tool)",
     description: "Created a centralized tool for managing client data statistics and operational workflows with role-based access control.",
     duration: "2024 Q3 - Present",
@@ -83,7 +112,7 @@ const officeProjects = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     name: "Game Matchmaking Discord Bot (Sammen) (Consumer Product)",
     description: "Built a Discord bot to manage matchmaking sessions for gamers, providing real-time game session updates.",
     duration: "2023",
@@ -110,7 +139,7 @@ const officeProjects = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     name: "Work Assignment Tool (Internal Tool)",
     description: "Replaced manual workload management systems with an automated solution to improve operational efficiency.",
     duration: "2022",
@@ -133,7 +162,7 @@ const officeProjects = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     name: "API Gateway with Rate Limiting and Caching (Personal Project)",
     description: "Developed an API Gateway for secure, scalable, and optimized API requests handling.",
     duration: "2024 Q4",
