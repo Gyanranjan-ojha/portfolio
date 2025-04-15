@@ -65,6 +65,7 @@ const officeProjects = [
       { name: "FastAPI", icon: SiFastapi },
       { name: "MySQL", icon: SiMysql },
       { name: "Swagger", icon: SiSwagger },
+      { name: "GraphQL", icon: SiGraphql },
       { name: "React", icon: FaReact },
       { name: "Node.js", icon: FaNodeJs },
       { name: "JavaScript", icon: SiJavascript },
