@@ -1,5 +1,5 @@
 import { FaPython, FaDocker, FaHtml5, FaCss3Alt, FaBitbucket, FaGithub, FaSteam, FaNodeJs, FaReact } from 'react-icons/fa';
-import { SiDjango, SiMysql, SiRedis, SiFastapi, SiJavascript, SiNewrelic, SiAmazonec2, SiAwsfargate, SiAwslambda, SiAmazons3, SiPostgresql, SiGraphql, SiNginx, SiNextdotjs, SiDiscord, SiHubspot, SiJfrogpipelines, SiGithubactions, SiMixpanel, SiSwagger } from 'react-icons/si';
+import { SiDjango, SiMysql, SiRedis, SiFastapi, SiJavascript, SiNewrelic, SiAmazonec2, SiAwsfargate, SiAwslambda, SiAmazons3, SiPostgresql, SiGraphql, SiNginx, SiNextdotjs, SiDiscord, SiHubspot, SiJfrogpipelines, SiGithubactions, SiMixpanel } from 'react-icons/si';
 import GlowCard from '../helper/glow-card';
 import SectionTitle from '../helper/section-title';
 import OfficeProjectCard from './office-project-card';
@@ -64,7 +64,6 @@ const officeProjects = [
       { name: "Python", icon: FaPython },
       { name: "FastAPI", icon: SiFastapi },
       { name: "MySQL", icon: SiMysql },
-      { name: "Swagger", icon: SiSwagger },
       { name: "GraphQL", icon: SiGraphql },
       { name: "React", icon: FaReact },
       { name: "Node.js", icon: FaNodeJs },
@@ -72,6 +71,7 @@ const officeProjects = [
       { name: "HTML", icon: FaHtml5 },
       { name: "CSS", icon: FaCss3Alt },
       { name: "Docker", icon: FaDocker },
+      { name: "AWS Fargate", icon: SiAwsfargate },
       { name: "Github", icon: FaGithub },
       { name: "Github Actions", icon: SiGithubactions },
       { name: "Mixpanel", icon: SiMixpanel },
