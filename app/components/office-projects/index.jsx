@@ -1,5 +1,5 @@
 import { FaPython, FaDocker, FaHtml5, FaCss3Alt, FaBitbucket, FaGithub, FaSteam, FaNodeJs, FaReact } from 'react-icons/fa';
-import { SiDjango, SiMysql, SiRedis, SiFastapi, SiJavascript, SiNewrelic, SiAmazonec2, SiAwsfargate, SiAwslambda, SiAmazons3, SiPostgresql, SiGraphql, SiNginx, SiNextdotjs, SiDiscord, SiHubspot, SiJfrogpipelines, SiGithubactions, SiMixpanel } from 'react-icons/si';
+import { SiDjango, SiMysql, SiRedis, SiFastapi, SiJavascript, SiNewrelic, SiAmazonec2, SiAwsfargate, SiAwslambda, SiAmazons3, SiPostgresql, SiGraphql, SiNginx, SiNextdotjs, SiDiscord, SiHubspot, SiJfrogpipelines, SiGithubactions, SiMixpanel, SiAlgolia } from 'react-icons/si';
 import GlowCard from '../helper/glow-card';
 import SectionTitle from '../helper/section-title';
 import OfficeProjectCard from './office-project-card';
@@ -7,9 +7,79 @@ import OfficeProjectCard from './office-project-card';
 const officeProjects = [
   {
     id: 1,
+    name: "GaaS Games Tracking Service (GGTS)",
+    description: "Designed and deployed a scheduled tracking system for five major cloud gaming platforms, using AWS EventBridge to trigger daily scraping, change detection, and final reporting tasks. Ensured a 99.9% successful execution rate for all scheduled jobs.",
+    duration: "2025 Q1",
+    techStack: [
+      { name: "Python", icon: FaPython },
+      { name: "AWS Lambda", icon: SiAwslambda },
+      { name: "AWS S3", icon: SiAmazons3 },
+      { name: "AWS Fargate", icon: SiAwsfargate },
+      { name: "Docker", icon: FaDocker },
+      { name: "Github", icon: FaGithub },
+      { name: "Github Actions", icon: SiGithubactions },
+    ],
+    contributions: [
+      "Developed AWS EventBridge + Lambda workflow for daily scraping, delta comparison, and automated email reports",
+      "Stored structured data in S3 for historical tracking and automated monitoring, reducing manual checks by 95%",
+      "Containerized deployments using Docker and AWS Fargate for Python 3.13+ environments",
+      "Ensured 99.9% successful execution rate for all scheduled jobs"
+    ]
+  },
+  {
+    id: 2,
+    name: "Game Matching Tool (GMT) v3.0",
+    description: "Built a high-performance search and matching system for large-scale game datasets with advanced indexing and monitoring capabilities.",
+    duration: "2024 Q4 - 2025 Q1",
+    techStack: [
+      { name: "Python", icon: FaPython },
+      { name: "FastAPI", icon: SiFastapi },
+      { name: "Algolia", icon: SiAlgolia },
+      { name: "MySQL", icon: SiMysql },
+      { name: "GraphQL", icon: SiGraphql },
+      { name: "AWS Lambda", icon: SiAwslambda },
+      { name: "AWS S3", icon: SiAmazons3 },
+      { name: "AWS Fargate", icon: SiAwsfargate },
+      { name: "Docker", icon: FaDocker },
+      { name: "Github", icon: FaGithub },
+      { name: "Github Actions", icon: SiGithubactions },
+      { name: "New Relic", icon: SiNewrelic },
+    ],
+    contributions: [
+      "Redesigned system in version 3 to improve accuracy, integrating internal metadata API with Algolia search index",
+      "Automated daily EventBridge jobs for delta updates, new game additions, and cleanup of deleted titles in Algolia",
+      "Implemented async batch processing in FastAPI to handle 1000+ records/min and maintain <50ms query times",
+      "Built high-performance search and matching system for large-scale game datasets"
+    ]
+  },
+  {
+    id: 3,
+    name: "Game Ratings Service (GRT)",
+    description: "Created a centralized platform for managing and displaying multi-platform game ratings, replacing manual spreadsheet processes.",
+    duration: "2024 Q3 - 2025 Q1",
+    techStack: [
+      { name: "Python", icon: FaPython },
+      { name: "FastAPI", icon: SiFastapi },
+      { name: "React", icon: FaReact },
+      { name: "MySQL", icon: SiMysql },
+      { name: "GraphQL", icon: SiGraphql },
+      { name: "AWS Fargate", icon: SiAwsfargate },
+      { name: "Docker", icon: FaDocker },
+      { name: "Github", icon: FaGithub },
+      { name: "Github Actions", icon: SiGithubactions },
+    ],
+    contributions: [
+      "Integrated OpenCritic API for automated critic rating collection with real-time updates",
+      "Implemented validation rules to maintain 100% data integrity across rating distributions",
+      "Built a responsive React frontend with light/dark theme support and mobile compatibility",
+      "Created centralized platform for managing multi-platform game ratings"
+    ]
+  },
+  {
+    id: 4,
     name: "Data Quest Hub (DQH) Client Delivery System",
     description: "Automated data collection, processing, and delivery workflows for custom client packages. Built scalable, fault-tolerant systems for large-scale operations.",
-    duration: "2024 Q3 - Present",
+    duration: "2024 Q3",
     techStack: [
       { name: "Python", icon: FaPython },
       { name: "FastAPI", icon: SiFastapi },
@@ -31,7 +101,7 @@ const officeProjects = [
     ]
   },
   {
-    id: 2,
+    id: 5,
     name: "Steam Prices Service Backend (Internal Tool)",
     description: "Developed a backend service to fetch and store Steam SKU price details from internal and external APIs, ensuring seamless data flow into a PostgreSQL database.",
     duration: "2024 Q4 - 2025 Q1",
@@ -56,7 +126,7 @@ const officeProjects = [
     ]
   },
   {
-    id: 3,
+    id: 6,
     name: "Game Ratings Service (Internal Tool) (Full Stack Role)",
     description: "Designed and developed a centralized system for managing user and critic ratings for games across different platforms, replacing previous Google Sheets-based system.",
     duration: "2023 Q2 - 2023 Q4",
@@ -86,10 +156,10 @@ const officeProjects = [
     ]
   },
   {
-    id: 4,
+    id: 7,
     name: "DQH Admin Tool (Internal Tool)",
     description: "Created a centralized tool for managing client data statistics and operational workflows with role-based access control.",
-    duration: "2024 Q3 - Present",
+    duration: "2024 Q4",
     techStack: [
       { name: "Python", icon: FaPython },
       { name: "Django", icon: SiDjango },
@@ -113,7 +183,7 @@ const officeProjects = [
     ]
   },
   {
-    id: 5,
+    id: 8,
     name: "Game Matchmaking Discord Bot (Sammen) (Consumer Product)",
     description: "Built a Discord bot to manage matchmaking sessions for gamers, providing real-time game session updates.",
     duration: "2023",
@@ -140,7 +210,7 @@ const officeProjects = [
     ]
   },
   {
-    id: 6,
+    id: 9,
     name: "Work Assignment Tool (Internal Tool)",
     description: "Replaced manual workload management systems with an automated solution to improve operational efficiency.",
     duration: "2022",
@@ -163,7 +233,7 @@ const officeProjects = [
     ]
   },
   {
-    id: 7,
+    id: 10,
     name: "API Gateway with Rate Limiting and Caching (Personal Project)",
     description: "Developed an API Gateway for secure, scalable, and optimized API requests handling.",
     duration: "2024 Q4",

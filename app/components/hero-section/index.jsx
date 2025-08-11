@@ -6,7 +6,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdDownload } from "react-icons/md";
 import { FaPython, FaAws, FaDocker, FaInstagramSquare,  FaSteam } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md'; 
-import { SiDjango, SiFastapi, SiFlask, SiMysql, SiPostgresql, SiGithubactions, SiJfrogpipelines, SiDocker, SiHubspot, SiDiscord } from 'react-icons/si';
+import { SiDjango, SiFastapi, SiFlask, SiMysql, SiPostgresql, SiGithubactions, SiJfrogpipelines, SiAlgolia, SiHubspot, SiDiscord } from 'react-icons/si';
 
 function HeroSection({ profile }) {
   const professionalSummary = `Passionate Python Developer with ${userData.experience} in building scalable web applications and RESTful APIs. Specialized in Django, FastAPI, and AWS cloud services with a strong focus on code quality and performance optimization.`;
@@ -58,6 +58,7 @@ function HeroSection({ profile }) {
                 <FaSteam className="text-2xl" />
                 <SiDiscord className="text-2xl" />
                 <SiHubspot className="text-2xl" />
+                <SiAlgolia className="text-2xl" />
               </div>
               <span className="text-sm">Web Apps & APIs</span>
             </div>
