@@ -28,8 +28,8 @@ function HeroSection({ profile }) {
           <div className="md:w-2/3 bg-primary-bg rounded-xl p-6 border border-[#1b2c68a0]">
             <h1 className="text-2xl font-bold text-primary-title mb-2">{profile.name}</h1> 
             <h2 className="text-xl text-primary-text mb-2">{userData.role} @{userData.company}</h2> 
-            <p className="text-primary-text">Current Location: {userData.current_location}</p> 
-            <p className="text-primary-text">Hometown Location: {userData.hometown_location}</p> 
+            <p className="text-primary-text">Current: {userData.current_location}</p> 
+            <p className="text-primary-text">Hometown: {userData.hometown_location}</p> 
             <p className="text-primary-text mt-4">{professionalSummary}</p>
           </div>
         </div>
