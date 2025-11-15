@@ -10,7 +10,7 @@ export const userData = {
   devUsername: "Gyanranjan-ojha",
   github: 'https://github.com/Gyanranjan-ojha',
   linkedIn: 'http://www.linkedin.com/in/gyanranjanojha-34330a216',
-  resume: "https://drive.google.com/file/d/1dlxIIUzgtc8HaT35Gkmqh0QrRPXRG1LE/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/156Ma3KJfjSxPItJdLW6g690zVrLy04Ta/view?usp=sharing",
   skills: ["Python", "Django", "Django REST Framework", "FastAPI", "MySQL", 'MongoDB', 'Postgres', 'Docker', 'AWS'],
   technical_skills : [
     "Python", "Django", "Django REST Framework", "FastAPI", "MySQL", "MongoDB", "Redis", "Docker", "Git", "HTML", "CSS", "JavaScript", "React.js", "AWS", "Linux", "Swagger",
